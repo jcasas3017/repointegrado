@@ -1,0 +1,9 @@
+<form #miForm="ngForm" (ngSubmit)="onGuardar(miForm)">
+    <div><label for="id">ID</label>
+        <input type="text" id="id" name="id" ngModel required>
+    </div>
+    <div><label for="valor">Valor</label>
+        <input type="text" id="valor" name="valor" ngModel required> 
+    </div>
+    <button type="submit" [disabled]="miForm.invalid">Guardar parametro</button>
+</form>
